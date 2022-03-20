@@ -105,7 +105,6 @@ namespace VSZip
         static bool HasNodeModules(string path)
         {
             var di = new DirectoryInfo(path);
-            Console.WriteLine("to install back use ~ npm i");
             return di.GetFiles().Any(x => x.Name == "package.json");
         }
     }
